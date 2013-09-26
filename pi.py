@@ -11,6 +11,6 @@ while True:
     i = i+2
     if not 1.0/i > 0.000000001:
         break
-
+print "estamos completando el proyecto"
 print "pi vale %s" % (pi4*4)
 print"Dante esta conectado"
