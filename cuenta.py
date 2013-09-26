@@ -5,40 +5,23 @@ contar cuanto positivos, negativos, pares, impares existen
 """
 # -*- coding: utf-8 -*-
 
-def esNegativo(num):
-    if n < 0:
-        return True
-    else:
-        return False
+#desde carpeta.programa import funcion
+from utilitarios.misUtilitarios import esNegativo
+from utilitarios.misUtilitarios import esPositivo
+from utilitarios.misUtilitarios import esPar
+from utilitarios.misUtilitarios import esImpar
 
-def esPositivo(num):
-    if n > 0:
-        return True
-    else:
-        return False
-
-
-def esPar(num):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
-
-
-def esImpar(num):
-    if n % 2 != 0:
-        return True
-    else:
-        return False
 
 cn = 0
 cp = 0
 cpares = 0
 cimpares = 0
 while True:
-    n=input("ingrese un numero")
+    n = input("ingrese un numero")
+
     if esNegativo(n):
         cn = cn + 1
+
     if esPositivo(n):
         cp = cp + 1
 
@@ -47,7 +30,7 @@ while True:
 
     if esImpar(n):
         cimpares = cimpares + 1
-    if not n!=0:
+    if not n != 0:
         break
 
 print "negativos = %s" % cn
