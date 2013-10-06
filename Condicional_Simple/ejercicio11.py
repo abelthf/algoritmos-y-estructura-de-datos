@@ -12,7 +12,7 @@ Solución:
     x: Variable idependiente
     y: Variabel dependeinte
 
-Notamos que g(x) tiene 3 posibles soluciones de acuerdo a cada condicion.
+Notamos que g(x) tiene 3 posibles soluciones de acuerdo a cada condición.
 entonces se puede apreciar que existen tres condiciones:
     si x > 8, la solución es log(x - 8)
     si x < x <= 8, la solución es 2x - ln x, finalmente
@@ -38,7 +38,11 @@ x = input("Ingrese el valor para x: ")
 if x<=0:
     y = x + math.sin(x)
 elif x <= 8:
-    y = 2 * x - math.log(x)
+    # math.log(primer_argumento, segundo_argumento)
+    # primer_argumento: el número del cual se desea obtener el logaritmo
+    # segundo_argumento: la báse del logaritmo
+
+    y = 2 * x - math.log(x,10)
 elif x <= 0:
     y = log(x - 8)
 
