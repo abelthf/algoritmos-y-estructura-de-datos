@@ -41,7 +41,6 @@ elif x <= 8:
     # math.log(primer_argumento, segundo_argumento)
     # primer_argumento: el número del cual se desea obtener el logaritmo
     # segundo_argumento: la báse del logaritmo
-
     y = 2 * x - math.log(x,10)
 elif x <= 0:
     y = log(x - 8)
